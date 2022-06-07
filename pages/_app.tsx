@@ -4,6 +4,7 @@ import { useAtomValue } from "jotai";
 import GlobalStyle from "../styles/globalStyle";
 import { darkModeAtom } from "../atoms";
 import { lightTheme, darkTheme } from "../theme";
+import BaseLayout from "../layouts/BaseLayout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const darkMode = useAtomValue(darkModeAtom);
@@ -11,7 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <BaseLayout>
+        <Component {...pageProps} />
+      </BaseLayout>
     </ThemeProvider>
   );
 }

@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeInterface }>`
     padding: 0;
     background: ${({ theme }) => theme.background};
     font-family: Open-Sans, Helvetica, Sans-Serif;
+    color: ${({ theme }) => theme.onSurface}
   }
 `;
 

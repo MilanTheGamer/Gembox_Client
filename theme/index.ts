@@ -9,6 +9,7 @@ export interface ThemeInterface {
   success: string;
   onPrimary: string;
   onSecondary: string;
+  onSurface: string;
   onError: string;
 }
 
@@ -23,6 +24,7 @@ export const lightTheme: ThemeInterface = {
   success: "#32ff6a",
   onPrimary: "#FFFFFF",
   onSecondary: "#121435",
+  onSurface: "#121435",
   onError: "#FFFFFF",
 };
 
@@ -37,5 +39,6 @@ export const darkTheme: ThemeInterface = {
   success: "#32ff6a",
   onPrimary: "#FFFFFF",
   onSecondary: "#121435",
+  onSurface: "#FFFFFF",
   onError: "#FFFFFF",
 };

@@ -23,6 +23,7 @@ module.exports = {
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
     "react/button-has-type": "off",
+    "react/require-default-props": "off",
   },
   settings: {
     react: {
