@@ -8,9 +8,10 @@ import BaseLayout from "../layouts/BaseLayout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const darkMode = useAtomValue(darkModeAtom);
+  const currentTheme = darkMode ? darkTheme : lightTheme;
 
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+    <ThemeProvider theme={currentTheme}>
       <GlobalStyle />
       <BaseLayout>
         <Component {...pageProps} />
