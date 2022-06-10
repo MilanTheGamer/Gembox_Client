@@ -1,6 +1,7 @@
+import dynamic from "next/dynamic";
 import { IconInterface } from "../../types/Icon";
 
-export function BrandLogo({
+function BrandLogo({
   width = "auto",
   height = "auto",
   color = "#121435",
@@ -12,7 +13,6 @@ export function BrandLogo({
       viewBox={`0 0 ${width} ${height}`}
       width={width}
       height={height}
-      fill={color}
       className={className}
     >
       <path
@@ -23,3 +23,7 @@ export function BrandLogo({
     </svg>
   );
 }
+
+export default dynamic(() => Promise.resolve(BrandLogo), {
+  ssr: false,
+});

@@ -1,5 +1,5 @@
 import { useTheme } from "styled-components";
-import { BrandLogo } from "../../components/Icons";
+import BrandLogo from "../../components/Logo";
 import { ThemeInterface } from "../../theme";
 import NavBar from "../NavBar";
 import { Wrapper } from "./styled";
