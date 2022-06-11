@@ -1,7 +1,26 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  min-height: 60%;
-  width: 4rem;
-  background: #494141;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    height: 60%;
+    width: 4rem;
+    background: ${({ theme }) => theme.surface};
+    border-radius: ${({ theme }) => theme.borderRadius.rounded};
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+    button {
+      cursor: pointer;
+    }
+  }
 `;
