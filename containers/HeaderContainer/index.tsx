@@ -1,6 +1,10 @@
+import dynamic from "next/dynamic";
 import BrandLogo from "../../components/Logo";
-import NavBar from "../NavBar";
 import { Wrapper } from "./styled";
+
+const NavBar = dynamic(() => import("../NavBar"), {
+  ssr: false,
+});
 
 export default function HeaderContainer() {
   return (
