@@ -8,6 +8,7 @@ import {
   HomeIcon,
   NotificationIcon,
   ThemeIcon,
+  WalletIcon,
 } from "../../components/Icons";
 import { Wrapper } from "./styled";
 
@@ -50,6 +51,7 @@ export default function NavBar() {
   return (
     <Wrapper>
       <div className="container">
+        <WalletIcon />
         {navItems.map((item) => {
           return (
             <div key={item.title}>

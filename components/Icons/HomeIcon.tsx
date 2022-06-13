@@ -6,6 +6,11 @@ const Wrapper = styled.div`
   svg g path {
     transition: ${({ theme }) => theme.transistion};
   }
+  &:hover {
+    svg g path {
+      fill: ${({ theme }) => theme.primary};
+    }
+  }
 `;
 
 export function HomeIcon({ isActive }: IconInterface) {

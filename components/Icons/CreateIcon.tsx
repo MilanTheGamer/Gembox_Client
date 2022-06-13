@@ -3,8 +3,13 @@ import { ThemeInterface } from "../../theme";
 import { IconInterface } from "../../types/Icon";
 
 const Wrapper = styled.div`
-  svg g path {
+  svg path {
     transition: ${({ theme }) => theme.transistion};
+  }
+  &:hover {
+    svg path {
+      fill: ${({ theme }) => theme.primary};
+    }
   }
 `;
 
