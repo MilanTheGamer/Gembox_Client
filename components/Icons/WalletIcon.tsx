@@ -1,18 +1,15 @@
 import styled, { useTheme } from "styled-components";
 import { motion } from "framer-motion";
 
-const Wrapper = styled(motion.div)`
-  width: 48px;
-  height: 48px;
+const Wrapper = styled(motion.button)`
+  width: 42px;
+  height: 42px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: ${({ theme }) => theme.borderRadius.rounded};
-  background: linear-gradient(
-    120deg,
-    ${({ theme }) => theme.primary},
-    ${({ theme }) => theme.secondary}
-  );
+  cursor: pointer;
 `;
 
 export function WalletIcon() {
@@ -25,13 +22,15 @@ export function WalletIcon() {
           `linear-gradient(360deg, ${theme.primary},${theme.secondary})`,
           `linear-gradient(0deg, ${theme.primary},${theme.secondary})`,
         ],
+        transition: {
+          ease: "easeInOut",
+          duration: 5,
+          repeat: Infinity,
+          repeatType: "reverse",
+        },
       }}
-      transition={{
-        ease: "easeInOut",
-        duration: 5,
-        repeat: Infinity,
-        repeatType: "reverse",
-      }}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
     >
       <svg
         width="25"
