@@ -23,6 +23,26 @@ export interface ThemeInterface {
     rounded: string;
   };
   transistion: string;
+  fontSize: {
+    h1: string;
+    h2: string;
+    h3: string;
+    h4: string;
+    h5: string;
+    h6: string;
+    sub1: string;
+    sub2: string;
+    body1: string;
+    body2: string;
+    button: string;
+    caption: string;
+    overline: string;
+  };
+  fontWeight: {
+    regular: number;
+    medium: number;
+    bold: number;
+  };
 }
 
 export const lightTheme: ThemeInterface = {
@@ -50,6 +70,26 @@ export const lightTheme: ThemeInterface = {
     rounded: "50px",
   },
   transistion: "all 0.2s ease-in-out",
+  fontSize: {
+    h1: "3rem",
+    h2: "2.5rem",
+    h3: "2rem",
+    h4: "1.875",
+    h5: "1.5",
+    h6: "1.25",
+    sub1: "1rem",
+    sub2: "0.875rem",
+    body1: "1rem",
+    body2: "0.875rem",
+    button: "0.875rem",
+    caption: "0.75rem",
+    overline: "0.625rem",
+  },
+  fontWeight: {
+    regular: 400,
+    medium: 500,
+    bold: 700,
+  },
 };
 
 export const darkTheme: ThemeInterface = {
@@ -77,4 +117,24 @@ export const darkTheme: ThemeInterface = {
     rounded: "50px",
   },
   transistion: "all 0.2s ease-in-out",
+  fontSize: {
+    h1: "3rem",
+    h2: "2.5rem",
+    h3: "2rem",
+    h4: "1.875",
+    h5: "1.5",
+    h6: "1.25",
+    sub1: "1rem",
+    sub2: "0.875rem",
+    body1: "1rem",
+    body2: "0.875rem",
+    button: "0.875rem",
+    caption: "0.75rem",
+    overline: "0.625rem",
+  },
+  fontWeight: {
+    regular: 400,
+    medium: 500,
+    bold: 700,
+  },
 };

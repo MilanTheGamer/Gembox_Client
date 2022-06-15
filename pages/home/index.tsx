@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
+import { HomeBanner } from "../../components/HomeBanner";
 
 const Home: NextPage = () => {
-  return <h1>Welcome To GEMBOX</h1>;
+  return <HomeBanner />;
 };
 
 export default Home;
