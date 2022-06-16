@@ -1,12 +1,16 @@
 import styled from "styled-components";
-import { Title } from "../Typography";
+import { Subtitle, Title, Text, Caption, Overline } from "../Typography";
 
 const Wrapper = styled.div``;
 
 export const HomeBanner = () => {
   return (
     <Wrapper>
-      <Title type="h1">Welcome</Title>
+      <Title>Welcome</Title>
+      <Subtitle>to the world of gembox</Subtitle>
+      <Text>Hello</Text>
+      <Caption>Hello</Caption>
+      <Overline>Hello there how are you?</Overline>
     </Wrapper>
   );
 };

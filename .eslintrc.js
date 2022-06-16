@@ -25,6 +25,7 @@ module.exports = {
     "react/button-has-type": "off",
     "react/require-default-props": "off",
     "jsx-a11y/anchor-is-valid": "off",
+    "react/no-unused-prop-types": "off",
   },
   settings: {
     react: {
