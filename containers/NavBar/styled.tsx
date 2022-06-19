@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 
   .container {
     height: 60%;
-    width: 3rem;
+    width: 48px;
     background: ${({ theme }) => theme.surface};
     border-radius: ${({ theme }) => theme.borderRadius.rounded};
     padding: 10px;

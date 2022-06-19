@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: calc(100vw - 16rem);
+  width: calc(100vw - 256px);
   min-height: 100vh;
   position: absolute;
   margin: 0px;
@@ -10,12 +10,13 @@ export const Wrapper = styled.div`
   flex-direction: row;
 
   .primaryContainer {
-    background: yellow;
     flex-grow: 2;
+    .banner {
+      margin-top: 20px;
+    }
   }
 
   .secondaryContainer {
-    background: blue;
     flex-grow: 1;
   }
 `;

@@ -31,6 +31,7 @@ const TitleWrapper = styled.div`
   h1 {
     font-size: ${({ theme }) => theme.fontSize.h1};
     font-weight: ${({ theme }) => theme.fontWeight.bold};
+    margin: 8px 0px;
   }
   h2 {
     font-size: ${({ theme }) => theme.fontSize.h2};
