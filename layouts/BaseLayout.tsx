@@ -4,7 +4,7 @@ import HeaderContainer from "../containers/HeaderContainer";
 
 const BaseLayoutStyled = styled.div`
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-direction: row;
 `;

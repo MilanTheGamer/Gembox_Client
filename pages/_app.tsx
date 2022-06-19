@@ -2,7 +2,7 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 import { useAtomValue } from "jotai";
 import { ErrorBoundary } from "react-error-boundary";
-import GlobalStyle from "../styles/globalStyle";
+import GlobalStyle from "../styles/globals";
 import { darkModeAtom } from "../atoms";
 import { lightTheme, darkTheme } from "../theme";
 import BaseLayout from "../layouts/BaseLayout";
