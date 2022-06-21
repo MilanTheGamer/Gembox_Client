@@ -9,7 +9,20 @@ const Home: NextPage = () => {
         <div className="banner">
           <HomeBanner />
         </div>
-        <div className="hotList">list</div>
+        <div className="hotList">
+          <div className="gridItem gridBigItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+          <div className="gridItem" />
+        </div>
       </div>
       <div className="secondaryContainer">World</div>
     </Wrapper>

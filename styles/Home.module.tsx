@@ -10,9 +10,25 @@ export const Wrapper = styled.div`
   flex-direction: row;
 
   .primaryContainer {
-    flex-grow: 2;
+    padding: 0px 20px;
     .banner {
-      margin-top: 20px;
+      margin: 20px 0px;
+    }
+    .hotList {
+      display: grid;
+      grid-template-columns: repeat(10, 75px);
+      grid-template-rows: repeat(6, 75px);
+      grid-gap: 10px;
+      .gridItem {
+        grid-column: span 2;
+        grid-row: span 2;
+        background: ${({ theme }) => theme.surface};
+        border-radius: ${({ theme }) => theme.borderRadius.light};
+        &.gridBigItem {
+          grid-column: span 4;
+          grid-row: span 4;
+        }
+      }
     }
   }
 
