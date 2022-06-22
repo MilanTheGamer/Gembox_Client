@@ -1,4 +1,4 @@
-import styled, { useTheme } from "styled-components";
+import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const Wrapper = styled(motion.button)`
@@ -13,20 +13,34 @@ const Wrapper = styled(motion.button)`
 `;
 
 export function WalletIcon() {
-  const theme = useTheme();
+  // const theme = useTheme();
 
   return (
     <Wrapper
       animate={{
         background: [
-          `linear-gradient(360deg, ${theme.primary},${theme.secondary})`,
-          `linear-gradient(0deg, ${theme.primary},${theme.secondary})`,
+          `linear-gradient(120deg, rgb(253, 110, 117) 0%, rgb(254, 90, 226) 50%, rgb(83, 145, 255) 100%)`,
+          `linear-gradient(120deg, rgb(253, 110, 117) 0%, rgb(254, 90, 226) 40%, rgb(83, 145, 255) 90%, rgb(253, 110, 117) 100%)`,
+          `linear-gradient(120deg, rgb(253, 110, 117) 0%, rgb(254, 90, 226) 30%, rgb(83, 145, 255) 80%, rgb(253, 110, 117) 100%)`,
+          `linear-gradient(120deg, rgb(253, 110, 117) 0%, rgb(254, 90, 226) 20%, rgb(83, 145, 255) 70%, rgb(253, 110, 117) 100%)`,
+          `linear-gradient(120deg, rgb(253, 110, 117) 0%, rgb(254, 90, 226) 10%, rgb(83, 145, 255) 60%, rgb(253, 110, 117) 100%)`,
+          `linear-gradient(120deg, rgb(254, 90, 226) 0%, rgb(83, 145, 255) 50%, rgb(253, 110, 117) 100%)`,
+          `linear-gradient(120deg, rgb(254, 90, 226) 0%, rgb(83, 145, 255) 40%, rgb(253, 110, 117) 90%, rgb(254, 90, 226) 100%)`,
+          `linear-gradient(120deg, rgb(254, 90, 226) 0%, rgb(83, 145, 255) 30%, rgb(253, 110, 117) 80%, rgb(254, 90, 226) 100%)`,
+          `linear-gradient(120deg, rgb(254, 90, 226) 0%, rgb(83, 145, 255) 20%, rgb(253, 110, 117) 70%, rgb(254, 90, 226) 100%)`,
+          `linear-gradient(120deg, rgb(254, 90, 226) 0%, rgb(83, 145, 255) 10%, rgb(253, 110, 117) 60%, rgb(254, 90, 226) 100%)`,
+          `linear-gradient(120deg, rgb(83, 145, 255) 0%, rgb(253, 110, 117) 50%, rgb(254, 90, 226) 100%)`,
+          `linear-gradient(120deg, rgb(83, 145, 255) 0%, rgb(253, 110, 117) 40%, rgb(254, 90, 226) 90%, rgb(83, 145, 255) 100%)`,
+          `linear-gradient(120deg, rgb(83, 145, 255) 0%, rgb(253, 110, 117) 30%, rgb(254, 90, 226) 80%, rgb(83, 145, 255) 100%)`,
+          `linear-gradient(120deg, rgb(83, 145, 255) 0%, rgb(253, 110, 117) 20%, rgb(254, 90, 226) 70%, rgb(83, 145, 255) 100%)`,
+          `linear-gradient(120deg, rgb(83, 145, 255) 0%, rgb(253, 110, 117) 10%, rgb(254, 90, 226) 60%, rgb(83, 145, 255) 100%)`,
         ],
         transition: {
-          ease: "easeInOut",
-          duration: 5,
+          // ease: "backInOut",
+          type: "spring",
+          duration: 2,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: "loop",
         },
       }}
       whileHover={{ scale: 1.1 }}
