@@ -36,22 +36,27 @@ const TitleWrapper = styled.div`
   h2 {
     font-size: ${({ theme }) => theme.fontSize.h2};
     font-weight: ${({ theme }) => theme.fontWeight.bold};
+    margin: 8px 0px;
   }
   h3 {
     font-size: ${({ theme }) => theme.fontSize.h3};
     font-weight: ${({ theme }) => theme.fontWeight.medium};
+    margin: 8px 0px;
   }
   h4 {
     font-size: ${({ theme }) => theme.fontSize.h4};
     font-weight: ${({ theme }) => theme.fontWeight.bold};
+    margin: 8px 0px;
   }
   h5 {
     font-size: ${({ theme }) => theme.fontSize.h5};
     font-weight: ${({ theme }) => theme.fontWeight.regular};
+    margin: 8px 0px;
   }
   h6 {
     font-size: ${({ theme }) => theme.fontSize.h6};
     font-weight: ${({ theme }) => theme.fontWeight.medium};
+    margin: 8px 0px;
   }
 `;
 

@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { HomeBanner } from "../../components/HomeBanner";
+import { Title } from "../../components/Typography";
 import { Wrapper } from "../../styles/Home.module";
 
 const Home: NextPage = () => {
@@ -24,7 +25,17 @@ const Home: NextPage = () => {
           <div className="gridItem" />
         </div>
       </div>
-      <div className="secondaryContainer">World</div>
+      <div className="secondaryContainer">
+        <div className="winnersTab">
+          <Title type="H3">Winners</Title>
+          <div className="winnersList">
+            <div className="winnerItem" />
+            <div className="winnerItem" />
+            <div className="winnerItem" />
+            <div className="winnerItem" />
+          </div>
+        </div>
+      </div>
     </Wrapper>
   );
 };

@@ -17,10 +17,18 @@ export interface ThemeInterface {
   highEmphasisOnPrimary: string;
   mediumEmphasisOnPrimary: string;
   disabledOnPrimary: string;
+  border: {
+    primary: string;
+  };
   borderRadius: {
     light: string;
     medium: string;
     rounded: string;
+  };
+  shadow: {
+    type1: string;
+    type2: string;
+    type3: string;
   };
   transistion: string;
   fontSize: {
@@ -64,10 +72,24 @@ export const lightTheme: ThemeInterface = {
   highEmphasisOnPrimary: "#FFFFFF87",
   mediumEmphasisOnPrimary: "#FFFFFF60",
   disabledOnPrimary: "#FFFFFF38",
+  border: {
+    primary: "1px solid #F0F3F3",
+  },
   borderRadius: {
     light: "5px",
     medium: "10px",
     rounded: "50px",
+  },
+  shadow: {
+    type1: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px",
+    type2: `
+      rgba(112, 69, 255, 0.4) 5px 5px,
+      rgba(112, 69, 255, 0.3) 10px 10px,
+      rgba(112, 69, 255, 0.2) 15px 15px,
+      rgba(112, 69, 255, 0.1) 20px 20px,
+      rgba(112, 69, 255, 0.05) 25px 25px
+    `,
+    type3: `rgba(112, 69, 255, 0.1) 0px 8px 24px, rgba(112, 69, 255, 0.1) 0px 16px 56px, rgba(112, 69, 255, 0.1) 0px 24px 80px`,
   },
   transistion: "all 0.2s ease-in-out",
   fontSize: {
@@ -111,10 +133,24 @@ export const darkTheme: ThemeInterface = {
   highEmphasisOnPrimary: "#FFFFFF87",
   mediumEmphasisOnPrimary: "#FFFFFF60",
   disabledOnPrimary: "#FFFFFF38",
+  border: {
+    primary: "1px solid #121435",
+  },
   borderRadius: {
     light: "5px",
     medium: "10px",
     rounded: "50px",
+  },
+  shadow: {
+    type1: "rgba(255, 255, 255, 0.1) 0px 25px 50px -12px",
+    type2: `
+      rgba(112, 69, 255, 0.4) 5px 5px,
+      rgba(112, 69, 255, 0.3) 10px 10px,
+      rgba(112, 69, 255, 0.2) 15px 15px,
+      rgba(112, 69, 255, 0.1) 20px 20px,
+      rgba(112, 69, 255, 0.05) 25px 25px
+    `,
+    type3: `rgba(112, 69, 255, 0.1) 0px 8px 24px, rgba(112, 69, 255, 0.1) 0px 16px 56px, rgba(112, 69, 255, 0.1) 0px 24px 80px`,
   },
   transistion: "all 0.2s ease-in-out",
   fontSize: {

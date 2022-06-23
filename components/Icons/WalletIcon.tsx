@@ -36,7 +36,6 @@ export function WalletIcon() {
           `linear-gradient(120deg, rgb(83, 145, 255) 0%, rgb(253, 110, 117) 10%, rgb(254, 90, 226) 60%, rgb(83, 145, 255) 100%)`,
         ],
         transition: {
-          // ease: "backInOut",
           type: "spring",
           duration: 2,
           repeat: Infinity,
