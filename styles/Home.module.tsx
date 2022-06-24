@@ -16,9 +16,9 @@ export const Wrapper = styled.div`
     }
     .hotList {
       display: grid;
-      grid-template-columns: repeat(10, 75px);
-      grid-template-rows: repeat(6, 75px);
-      grid-gap: 10px;
+      grid-template-columns: repeat(8, 80px);
+      grid-template-rows: repeat(6, 80px);
+      grid-gap: 20px;
       .gridItem {
         grid-column: span 2;
         grid-row: span 2;
@@ -34,6 +34,10 @@ export const Wrapper = styled.div`
         &.gridBigItem {
           grid-column: span 4;
           grid-row: span 4;
+        }
+        &.wideGridItem {
+          grid-column: span 4;
+          grid-row: span 2;
         }
       }
     }

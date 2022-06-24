@@ -18,11 +18,7 @@ const Home: NextPage = () => {
           <div className="gridItem" />
           <div className="gridItem" />
           <div className="gridItem" />
-          <div className="gridItem" />
-          <div className="gridItem" />
-          <div className="gridItem" />
-          <div className="gridItem" />
-          <div className="gridItem" />
+          <div className="gridItem wideGridItem" />
         </div>
       </div>
       <div className="secondaryContainer">
