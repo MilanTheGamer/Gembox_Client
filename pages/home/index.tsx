@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import Card from "../../components/Card";
 import { HomeBanner } from "../../components/HomeBanner";
+import HotList from "../../components/HotList";
 import { Title } from "../../components/Typography";
 import { Wrapper } from "../../styles/Home.module";
 
@@ -11,17 +11,7 @@ const Home: NextPage = () => {
         <div className="banner">
           <HomeBanner />
         </div>
-        <div className="hotList">
-          {/* <div className="gridItem gridBigItem" /> */}
-          <Card />
-          <div className="gridItem" />
-          <div className="gridItem" />
-          <div className="gridItem" />
-          <div className="gridItem" />
-          <div className="gridItem" />
-          <div className="gridItem" />
-          <div className="gridItem wideGridItem" />
-        </div>
+        <HotList />
       </div>
       <div className="secondaryContainer">
         <div className="winnersTab">
