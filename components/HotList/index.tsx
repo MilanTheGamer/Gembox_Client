@@ -21,6 +21,13 @@ const testData: any[] = [
     type: "7h",
     blockchain: "etherium",
     bidAmount: 10,
+    priority: "low",
+  },
+  {
+    id: 4,
+    type: "24h",
+    blockchain: "etherium",
+    bidAmount: 10,
     priority: "medium",
   },
 ];
