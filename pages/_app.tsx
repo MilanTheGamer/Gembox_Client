@@ -10,16 +10,22 @@ import { ErrorFallback } from "../components/ErrorFallback";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const darkMode = useAtomValue(darkModeAtom);
-  const currentTheme = darkMode ? darkTheme : lightTheme;
+
+  // eslint-disable-next-line
+  const StyledThemeProvider = (props: any) => {
+    return (
+      <ThemeProvider theme={darkMode ? darkTheme : lightTheme} {...props} />
+    );
+  };
 
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <ThemeProvider theme={currentTheme}>
+      <StyledThemeProvider>
         <GlobalStyle />
         <BaseLayout>
           <Component {...pageProps} />
         </BaseLayout>
-      </ThemeProvider>
+      </StyledThemeProvider>
     </ErrorBoundary>
   );
 }
