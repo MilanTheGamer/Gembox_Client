@@ -28,6 +28,12 @@ const Wrapper = styled(motion.div)`
   }
 `;
 
+// const variants = {
+//   expanded={
+//     width: []
+//   }
+// }
+
 interface CardInterface {
   data?: any;
   type?: string;
