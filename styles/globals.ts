@@ -5,21 +5,21 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeInterface }>`
   /* SETTINGS FONTS */
   @font-face {
       font-family: 'Celias';
-      src:  url("../public/fonts/Celias/Celias.ttf") format('truetype');
+      src:  url("/fonts/Celias/Celias.ttf") format('truetype');
       font-weight: 400;
       font-style: normal;
   }
 
   @font-face {
       font-family: 'Celias';
-      src:  url("../public/fonts/Celias/Celias-Medium.ttf") format('truetype');
+      src:  url("/fonts/Celias/Celias-Medium.ttf") format('truetype');
       font-weight: 500;
       font-style: normal;
   }
 
   @font-face {
       font-family: 'Celias';
-      src:  url("../public/fonts/Celias/Celias-Bold.ttf") format('truetype');
+      src:  url("/fonts/Celias/Celias-Bold.ttf") format('truetype');
       font-weight: 700;
       font-style: normal;
   }
